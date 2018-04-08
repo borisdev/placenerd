@@ -7,8 +7,9 @@ services:
     environment:
       PYTHONPATH: "$PYTHONPATH:/opt/placenerd/app"
       ENV: "DEVELOPMENT"
+      NLTK_DATA: "/opt/placenerd/nltk_data"
+      DOWNLOAD_DATASET: "book"
     working_dir: /opt/placenerd/app
     command: /bin/bash -c "python entrypoint.py"
-    #command: /bin/bash -c "while true; do sleep 1000; done"
     volumes: 
         - ./:/opt/placenerd

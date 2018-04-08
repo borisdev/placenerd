@@ -1,7 +1,9 @@
 import time 
+import logging
 import os
 import sys
 ENV = os.environ['ENV']
+logging.warning(ENV)
 
 if ENV == "DEVELOPMENT":
     while True:

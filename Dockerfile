@@ -25,4 +25,5 @@ RUN conda install -c conda-forge nltk
 RUN pip install boto3==1.4.4
 
 RUN apt-get update && apt-get install -y git
+RUN conda install -c anaconda pandas
 ADD ./ /opt
