@@ -1,0 +1,14 @@
+version: '2'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      PYTHONPATH: "$PYTHONPATH:/opt/placenerd/app"
+      ENV: "DEVELOPMENT"
+    working_dir: /opt/placenerd/app
+    command: /bin/bash -c "python entrypoint.py"
+    #command: /bin/bash -c "while true; do sleep 1000; done"
+    volumes: 
+        - ./:/opt/placenerd
