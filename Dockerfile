@@ -26,4 +26,5 @@ RUN pip install boto3==1.4.4
 
 RUN apt-get update && apt-get install -y git
 RUN conda install -c anaconda pandas
+RUN conda install -c conda-forge pytables
 ADD ./ /opt
