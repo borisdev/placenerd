@@ -46,3 +46,4 @@ RUN pip install djangorestframework==3.6.3
 RUN pip install django-axes==2.3.2
 RUN pip install requests==2.18.4
 RUN pip install lxml==4.1.1
+RUN pip install psycopg2

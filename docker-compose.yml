@@ -4,10 +4,12 @@ services:
         build: .
         links:
             - mongodb
+            - db
         depends_on:
             - mongodb
+            - db
         command: python entrypoint.py
-        working_dir: /opt/placenerd/app
+        working_dir: /opt/placenerd
         environment:
             - NLTK_DATA=/opt/placenerd/nltk_data
             - DOWNLOAD_DATASET=book
@@ -25,13 +27,22 @@ services:
             - "3000:3000"
         volumes:
             - ./:/opt/placenerd
+    db:
+        image: 'postgres:9.5.3'
+        ports:
+            - '5432:5432'
+        volumes:
+          - pgdata:/var/lib/postgresql/data/
     mongodb:
         image: mongo:3.2.10
         volumes:
-          - ./data/db:/data/db
+          - mongodata:/data/db
         ports:
             - "27017:27017"
         command: mongod --smallfiles --logpath=/dev/null
         environment:
             - MONGODB_USER=user 
             - MONGODB_PASS=pass
+volumes:
+  pgdata:
+  mongodata:
