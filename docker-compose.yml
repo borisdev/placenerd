@@ -1,15 +1,37 @@
 version: '2'
 services:
-  app:
-    build:
-      context: .
-      dockerfile: ./Dockerfile
-    environment:
-      PYTHONPATH: "$PYTHONPATH:/opt/placenerd/app"
-      ENV: "DEVELOPMENT"
-      NLTK_DATA: "/opt/placenerd/nltk_data"
-      DOWNLOAD_DATASET: "book"
-    working_dir: /opt/placenerd/app
-    command: /bin/bash -c "python entrypoint.py"
-    volumes: 
-        - ./:/opt/placenerd
+    placenerd:
+        build: .
+        links:
+            - mongodb
+        depends_on:
+            - mongodb
+        command: python entrypoint.py
+        working_dir: /opt/placenerd/app
+        environment:
+            - NLTK_DATA=/opt/placenerd/nltk_data
+            - DOWNLOAD_DATASET=book
+            - PYTHONPATH=$PYTHONPATH:/opt/placenerd/app
+            - ENV_VERSION=DEV
+            # MongoDB
+            - DATABASE=placenerd
+            - DATABASE_HOST=mongodb
+            - DATABASE_URI=mongodb://mongodb:27017
+            - DATABASE_PORT=27017
+            - TERM=xterm
+        ports:
+            - "8080:8080"
+            - "8000:8000"
+            - "3000:3000"
+        volumes:
+            - ./:/opt/placenerd
+    mongodb:
+        image: mongo:3.2.10
+        volumes:
+          - ./data/db:/data/db
+        ports:
+            - "27017:27017"
+        command: mongod --smallfiles --logpath=/dev/null
+        environment:
+            - MONGODB_USER=user 
+            - MONGODB_PASS=pass
