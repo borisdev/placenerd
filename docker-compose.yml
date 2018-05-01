@@ -19,6 +19,7 @@ services:
             - DATABASE=placenerd
             - DATABASE_HOST=mongodb
             - DATABASE_URI=mongodb://mongodb:27017
+            - DATABASE_URL=db://db:5432
             - DATABASE_PORT=27017
             - TERM=xterm
         ports:
