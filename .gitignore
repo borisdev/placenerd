@@ -1,5 +1,6 @@
 nltk_data/*
 data/*
 datasets/*
+analysis/store.h5
 *.h5
 *.csv
