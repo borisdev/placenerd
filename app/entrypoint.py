@@ -3,9 +3,9 @@ import logging
 import os
 import sys
 ENV = os.environ['ENV']
-logging.warning(ENV)
+logging.info(ENV)
 
-if ENV == "DEVELOPMENT":
+if ENV == "DEV":
     while True:
         time.sleep(100)
 else:

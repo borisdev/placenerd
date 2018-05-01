@@ -12,7 +12,7 @@ services:
             - NLTK_DATA=/opt/placenerd/nltk_data
             - DOWNLOAD_DATASET=book
             - PYTHONPATH=$PYTHONPATH:/opt/placenerd/app
-            - ENV_VERSION=DEV
+            - ENV=DEV
             # MongoDB
             - DATABASE=placenerd
             - DATABASE_HOST=mongodb
