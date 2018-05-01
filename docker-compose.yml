@@ -1,0 +1,49 @@
+version: '2'
+services:
+    placenerd:
+        build: .
+        links:
+            - mongodb
+            - db
+        depends_on:
+            - mongodb
+            - db
+        command: python entrypoint.py
+        working_dir: /opt/placenerd
+        environment:
+            - NLTK_DATA=/opt/placenerd/nltk_data
+            - DOWNLOAD_DATASET=book
+            - PYTHONPATH=$PYTHONPATH:/opt/placenerd/app
+            - ENV=DEV
+            # MongoDB
+            - DATABASE=placenerd
+            - DATABASE_HOST=mongodb
+            - DATABASE_URI=mongodb://mongodb:27017
+            - DATABASE_URL=db://db:5432
+            - DATABASE_PORT=27017
+            - TERM=xterm
+        ports:
+            - "8080:8080"
+            - "8000:8000"
+            - "3000:3000"
+        volumes:
+            - ./:/opt/placenerd
+    db:
+        image: 'postgres:9.5.3'
+        ports:
+            - '5432:5432'
+        volumes:
+          - pgdata:/var/lib/postgresql/data/
+    mongodb:
+        image: mongo:3.2.10
+        volumes:
+          - mongodata:/data/db
+        ports:
+            - "27017:27017"
+        command: mongod --smallfiles --logpath=/dev/null
+        environment:
+            - MONGODB_USER=user 
+            - MONGODB_PASS=pass
+volumes:
+  pgdata:
+  mongodata:
