@@ -1,5 +1,0 @@
-nltk_data/*
-data/*
-datasets/*
-*.h5
-*.csv
