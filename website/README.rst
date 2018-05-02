@@ -7,6 +7,21 @@ interesting stats on places
      :target: https://github.com/pydanny/cookiecutter-django/
      :alt: Built with Cookiecutter Django
 
+Build the Stack
+------------------
+
+    docker-compose -f local.yml build
+
+Run the Stack
+-----------------
+
+    docker-compose -f local.yml up
+
+Execute Management Commands
+----------------------------
+
+    docker-compose -f local.yml run --rm django python manage.py migrate
+    docker-compose -f local.yml run --rm django python manage.py createsuperuser
 
 Settings
 --------
