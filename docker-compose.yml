@@ -11,6 +11,9 @@ services:
         command: python entrypoint.py
         working_dir: /opt/placenerd
         environment:
+            - POSTGRES_DB=website
+            - POSTGRES_USER=gBZUPTgZNTwWHQckDneqnzzOeavcNcKA
+            - POSTGRES_PASSWORD=iN2OuTVSuX8pkpzomLcIjWh85iIZ9c6nEzJGl6riaQPX7yanfQJ7GO7nV54zDRWi
             - NLTK_DATA=/opt/placenerd/nltk_data
             - DOWNLOAD_DATASET=book
             - PYTHONPATH=$PYTHONPATH:/opt/placenerd/app
@@ -29,11 +32,16 @@ services:
         volumes:
             - ./:/opt/placenerd
     db:
+        restart: always
         image: 'postgres:9.5.3'
         ports:
             - '5432:5432'
         volumes:
           - pgdata:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_DB=website
+            - POSTGRES_USER=gBZUPTgZNTwWHQckDneqnzzOeavcNcKA
+            - POSTGRES_PASSWORD=iN2OuTVSuX8pkpzomLcIjWh85iIZ9c6nEzJGl6riaQPX7yanfQJ7GO7nV54zDRWi
     mongodb:
         image: mongo:3.2.10
         volumes:
