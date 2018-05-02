@@ -1,0 +1,20 @@
+VARIABLES FOR EACH COLUMNS OF THE MATRIX IN ORDER:
+
+"bikers","walkers","masters_degree","self_employed","mixrace","mobility_abroad","mobility_msa"
+
+Issues:
+
+1. replace values where a shapefile geoid does not also exist in the data with
+nan before re-ordering, or else they erroneously become zeros
+
+2. my percentiles function might not be handling numpy.nan and zeros correctly
+
+3. Why inf?
+
+In [116]: mean(D["bikers"])
+Out[116]: inf
+
+In [127]: sum(np.isinf(D["bikers"]))
+Out[127]: 0
+
+

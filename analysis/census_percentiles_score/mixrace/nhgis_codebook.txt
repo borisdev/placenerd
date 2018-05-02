@@ -1,0 +1,243 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0008_ds176_20105_2010_blck_grp'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2006-2010
+Geographic level: Block Group (by State--County--Census Tract)
+Dataset:          2010 American Community Survey: 5-Year Data [2006-2010, Block Groups & Larger Areas]
+   NHGIS code:    2010_ACS5a
+   NHGIS ID:      ds176
+Breakdown(s):     Geographic Subarea:
+                     Total area (00)
+Data type(s):     (E) Estimates
+                  (M) Margins of error
+ 
+Tables:
+ 
+1. Total Population
+   Universe:    Total population
+   Source code: B01003
+   NHGIS code:  JMA
+ 
+2. Race
+   Universe:    Total population
+   Source code: B02001
+   NHGIS code:  JMB
+ 
+3. Detailed Race
+   Universe:    Total population
+   Source code: C02003
+   NHGIS code:  JMC
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        REGION:      Region Name
+        REGIONA:     Region Code
+        DIVISION:    Division Name
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTY:      County Name
+        COUNTYA:     County Code
+        COUSUB:      County Subdivision Name
+        COUSUBA:     County Subdivision Code
+        PLACE:       Place Name
+        PLACEA:      Place Code
+        TRACTA:      Census Tract Code
+        BLKGRPA:     Block Group Code
+        CONCITA:     Consolidated City Code
+        AIANHH:      American Indian Area/Alaska Native Area/Hawaiian Home Land Name
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        RES_ONLYA:   American Indian Area/Alaska Native Area (Reservation or Statistical Entity Only) Code
+        TRUSTA:      American Indian Reservation with Trust Lands; trust lands only Code
+        AITSCEA:     Tribal Subdivision/Remainder Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        CBSA:        Metropolitan Statistical Area/Micropolitan Statistical Area Name
+        CBSAA:       Metropolitan Statistical Area/Micropolitan Statistical Area Code
+        CSA:         Combined Statistical Area Name
+        CSAA:        Combined Statistical Area Code
+        METDIV:      Metropolitan Division Name
+        METDIVA:     Metropolitan Division Code
+        NECTA:       New England City and Town Area Name
+        NECTAA:      New England City and Town Area Code
+        CNECTA:      Combined New England City and Town Area Name
+        CNECTAA:     Combined New England City and Town Area Code
+        NECTADIV:    New England City and Town Area Division Name
+        NECTADIVA:   New England City and Town Area Division Code
+        UA:          Urban Area Name
+        UAA:         Urban Area Code
+        CDCURRA:     Congressional District (111th Congress) Code
+        SLDUA:       State Legislative District (Upper Chamber) Code
+        SLDLA:       State Legislative District (Lower Chamber) Code
+        SUBMCDA:     Subminor Civil Division Code
+        SDELM:       School District (Elementary)/Remainder Name
+        SDELMA:      School District (Elementary)/Remainder Code
+        SDSEC:       School District (Secondary)/Remainder Name
+        SDSECA:      School District (Secondary)/Remainder Code
+        SDUNI:       School District (Unified)/Remainder Name
+        SDUNIA:      School District (Unified)/Remainder Code
+        PUMA5A:      Public Use Microdata Sample Area (PUMA) Code
+        BTTRA:       Tribal Census Tract Code
+        BTBGA:       Tribal Block Group Code
+ 
+Breakdown/Data Type 1 (E):
+    Geographic Subarea: Total area (00)
+    Estimates
+ 
+        NAME_E:      Area Name
+ 
+    Table 1:     Total Population
+    Universe:    Total population
+    Source code: B01003
+    NHGIS code:  JMA
+        JMAE001:     Total
+ 
+    Table 2:     Race
+    Universe:    Total population
+    Source code: B02001
+    NHGIS code:  JMB
+        JMBE001:     Total
+        JMBE002:     White alone
+        JMBE003:     Black or African American alone
+        JMBE004:     American Indian and Alaska Native alone
+        JMBE005:     Asian alone
+        JMBE006:     Native Hawaiian and Other Pacific Islander alone
+        JMBE007:     Some other race alone
+        JMBE008:     Two or more races
+        JMBE009:     Two or more races: Two races including Some other race
+        JMBE010:     Two or more races: Two races excluding Some other race, and three or more races
+ 
+    Table 3:     Detailed Race
+    Universe:    Total population
+    Source code: C02003
+    NHGIS code:  JMC
+        JMCE001:     Total
+        JMCE002:     Population of one race
+        JMCE003:     Population of one race: White
+        JMCE004:     Population of one race: Black or African American
+        JMCE005:     Population of one race: American Indian and Alaska Native
+        JMCE006:     Population of one race: Asian alone
+        JMCE007:     Population of one race: Native Hawaiian and Other Pacific Islander
+        JMCE008:     Population of one race: Some other race
+        JMCE009:     Population of two or more races
+        JMCE010:     Population of two or more races: Two races including Some other race
+        JMCE011:     Population of two or more races: Two races excluding Some other race, and three or more races
+        JMCE012:     Population of two or more races: Population of two races
+        JMCE013:     Population of two or more races: Population of two races: White; Black or African American
+        JMCE014:     Population of two or more races: Population of two races: White; American Indian and Alaska Native
+        JMCE015:     Population of two or more races: Population of two races: White; Asian
+        JMCE016:     Population of two or more races: Population of two races: Black or African American; American Indian and Alaska Native
+        JMCE017:     Population of two or more races: Population of two races: All other two race combinations
+        JMCE018:     Population of three races
+        JMCE019:     Population of four or more races
+ 
+Breakdown/Data Type 2 (M):
+    Geographic Subarea: Total area (00)
+    Margins of error
+ 
+        NAME_M:      Area Name
+ 
+    Table 1:     Total Population
+    Universe:    Total population
+    Source code: B01003
+    NHGIS code:  JMA
+        JMAM001:     Total
+ 
+    Table 2:     Race
+    Universe:    Total population
+    Source code: B02001
+    NHGIS code:  JMB
+        JMBM001:     Total
+        JMBM002:     White alone
+        JMBM003:     Black or African American alone
+        JMBM004:     American Indian and Alaska Native alone
+        JMBM005:     Asian alone
+        JMBM006:     Native Hawaiian and Other Pacific Islander alone
+        JMBM007:     Some other race alone
+        JMBM008:     Two or more races
+        JMBM009:     Two or more races: Two races including Some other race
+        JMBM010:     Two or more races: Two races excluding Some other race, and three or more races
+ 
+    Table 3:     Detailed Race
+    Universe:    Total population
+    Source code: C02003
+    NHGIS code:  JMC
+        JMCM001:     Total
+        JMCM002:     Population of one race
+        JMCM003:     Population of one race: White
+        JMCM004:     Population of one race: Black or African American
+        JMCM005:     Population of one race: American Indian and Alaska Native
+        JMCM006:     Population of one race: Asian alone
+        JMCM007:     Population of one race: Native Hawaiian and Other Pacific Islander
+        JMCM008:     Population of one race: Some other race
+        JMCM009:     Population of two or more races
+        JMCM010:     Population of two or more races: Two races including Some other race
+        JMCM011:     Population of two or more races: Two races excluding Some other race, and three or more races
+        JMCM012:     Population of two or more races: Population of two races
+        JMCM013:     Population of two or more races: Population of two races: White; Black or African American
+        JMCM014:     Population of two or more races: Population of two races: White; American Indian and Alaska Native
+        JMCM015:     Population of two or more races: Population of two races: White; Asian
+        JMCM016:     Population of two or more races: Population of two races: Black or African American; American Indian and Alaska Native
+        JMCM017:     Population of two or more races: Population of two races: All other two race combinations
+        JMCM018:     Population of three races
+        JMCM019:     Population of four or more races
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing NHGIS data (either tabular or GIS)
+  must cite it appropriately. The citation should include the following:
+
+    Minnesota Population Center. National Historical Geographic Information
+    System: Version 2.0. Minneapolis, MN: University of Minnesota 2011.
+
+* Publications and research reports employing school attendance areas data
+  (either tabular or GIS) must cite it appropriately. The citation should
+  include the following:
+
+    The College of William and Mary and the Minnesota Population Center.
+    School Attendance Boundary Information System (SABINS): Version 1.0.
+    Minneapolis, MN: University of Minnesota 2011.
+
+* If possible, citations should also include the URL for the NHGIS site:
+
+    https://www.nhgis.org/
+
+* If possible, citations involving school attendance areas should also include
+  the URL for the SABINS site:
+
+    http://www.sabinsdata.org/
+
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+Printed matter should be sent to:
+
+    NHGIS
+    Minnesota Population Center
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455
+
+Send electronic material to: nhgis@umn.edu
