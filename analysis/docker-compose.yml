@@ -10,3 +10,6 @@ services:
             - PYTHONPATH=$PYTHONPATH:/opt/placenerd/analysis
         volumes:
             - ./:/opt/placenerd/analysis
+        ports:
+            - "8888:8888"
+        
