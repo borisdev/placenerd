@@ -7,14 +7,14 @@
 # make OO
 
 import pysal
-from prettytable import *
+#from prettytable import *
 import numpy
 import numpy as np
 import os
 import time 
 from numpy import *
 from time import *
-import redis
+#import redis
 import time
 
 # This meta data gets sent to the browser as variables user can choose from
@@ -81,7 +81,8 @@ def compute_score(user_weights):
     valid_weights = {key: value for key, value in user_weights.items() if value is not  0}
     assert len(valid_weights) > 0, "No valid non-zero weights provided" 
     user_vars = valid_weights.keys()
-    user_values_vector = array(valid_weights.values())
+    user_values = [i for i in valid_weights.values()]
+    user_values_vector = array(user_values)
     # convert chosen variable columns of structured record array to smaller normal array for matrix alegbra
     matrix=array([D[n] for n in user_vars],dtype=float).T
     #print matrix
@@ -95,7 +96,6 @@ def compute_score(user_weights):
 
 
 if __name__ == '__main__':
-
     ## INPUT user_weights
     user_weights = {
             'bikers':-10, 
@@ -106,4 +106,5 @@ if __name__ == '__main__':
             'mobility_abroad':6,
             'mobility_msa':7
         }
-    print compute_scores(user_weights)
+    score = compute_score(user_weights)
+    print(score)
