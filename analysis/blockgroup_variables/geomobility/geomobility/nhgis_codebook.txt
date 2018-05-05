@@ -1,0 +1,177 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0009_ds176_20105_2010_blck_grp'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2006-2010
+Geographic level: Block Group (by State--County--Census Tract)
+Dataset:          2010 American Community Survey: 5-Year Data [2006-2010, Block Groups & Larger Areas]
+   NHGIS code:    2010_ACS5a
+   NHGIS ID:      ds176
+Breakdown(s):     Geographic Subarea:
+                     Total area (00)
+Data type(s):     (E) Estimates
+                  (M) Margins of error
+ 
+Tables:
+ 
+1. Geographical Mobility in the Past Year for Current Residence--Metropolitan Statistical Area Level in the United States
+   Universe:    Population 1 year and over living in a Metropolitan Statistical Area in the United States
+   Source code: C07201
+   NHGIS code:  JML
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        REGION:      Region Name
+        REGIONA:     Region Code
+        DIVISION:    Division Name
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTY:      County Name
+        COUNTYA:     County Code
+        COUSUB:      County Subdivision Name
+        COUSUBA:     County Subdivision Code
+        PLACE:       Place Name
+        PLACEA:      Place Code
+        TRACTA:      Census Tract Code
+        BLKGRPA:     Block Group Code
+        CONCITA:     Consolidated City Code
+        AIANHH:      American Indian Area/Alaska Native Area/Hawaiian Home Land Name
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        RES_ONLYA:   American Indian Area/Alaska Native Area (Reservation or Statistical Entity Only) Code
+        TRUSTA:      American Indian Reservation with Trust Lands; trust lands only Code
+        AITSCEA:     Tribal Subdivision/Remainder Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        CBSA:        Metropolitan Statistical Area/Micropolitan Statistical Area Name
+        CBSAA:       Metropolitan Statistical Area/Micropolitan Statistical Area Code
+        CSA:         Combined Statistical Area Name
+        CSAA:        Combined Statistical Area Code
+        METDIV:      Metropolitan Division Name
+        METDIVA:     Metropolitan Division Code
+        NECTA:       New England City and Town Area Name
+        NECTAA:      New England City and Town Area Code
+        CNECTA:      Combined New England City and Town Area Name
+        CNECTAA:     Combined New England City and Town Area Code
+        NECTADIV:    New England City and Town Area Division Name
+        NECTADIVA:   New England City and Town Area Division Code
+        UA:          Urban Area Name
+        UAA:         Urban Area Code
+        CDCURRA:     Congressional District (111th Congress) Code
+        SLDUA:       State Legislative District (Upper Chamber) Code
+        SLDLA:       State Legislative District (Lower Chamber) Code
+        SUBMCDA:     Subminor Civil Division Code
+        SDELM:       School District (Elementary)/Remainder Name
+        SDELMA:      School District (Elementary)/Remainder Code
+        SDSEC:       School District (Secondary)/Remainder Name
+        SDSECA:      School District (Secondary)/Remainder Code
+        SDUNI:       School District (Unified)/Remainder Name
+        SDUNIA:      School District (Unified)/Remainder Code
+        PUMA5A:      Public Use Microdata Sample Area (PUMA) Code
+        BTTRA:       Tribal Census Tract Code
+        BTBGA:       Tribal Block Group Code
+ 
+Breakdown/Data Type 1 (E):
+    Geographic Subarea: Total area (00)
+    Estimates
+ 
+        NAME_E:      Area Name
+ 
+    Table 1:     Geographical Mobility in the Past Year for Current Residence--Metropolitan Statistical Area Level in the United States
+    Universe:    Population 1 year and over living in a Metropolitan Statistical Area in the United States
+    Source code: C07201
+    NHGIS code:  JML
+        JMLE001:     Total
+        JMLE002:     Same house 1 year ago
+        JMLE003:     Different house in United States 1 year ago
+        JMLE004:     Different house in United States 1 year ago: Same Metropolitan Statistical Area
+        JMLE005:     Different house in United States 1 year ago: Same Metropolitan Statistical Area: Moved from principal city
+        JMLE006:     Different house in United States 1 year ago: Same Metropolitan Statistical Area: Moved from remainder of Metropolitan Statistical Area
+        JMLE007:     Different house in United States 1 year ago: Different Metropolitan Statistical Area
+        JMLE008:     Different house in United States 1 year ago: Different Metropolitan Statistical Area: Moved from principal city
+        JMLE009:     Different house in United States 1 year ago: Different Metropolitan Statistical Area: Moved from remainder of Metropolitan Statistical Area
+        JMLE010:     Different house in United States 1 year ago: Micropolitan Statistical Area
+        JMLE011:     Different house in United States 1 year ago: Not in a Metropolitan or Micropolitan Statistical Area 1 year ago
+        JMLE012:     Abroad 1 year ago
+ 
+Breakdown/Data Type 2 (M):
+    Geographic Subarea: Total area (00)
+    Margins of error
+ 
+        NAME_M:      Area Name
+ 
+    Table 1:     Geographical Mobility in the Past Year for Current Residence--Metropolitan Statistical Area Level in the United States
+    Universe:    Population 1 year and over living in a Metropolitan Statistical Area in the United States
+    Source code: C07201
+    NHGIS code:  JML
+        JMLM001:     Total
+        JMLM002:     Same house 1 year ago
+        JMLM003:     Different house in United States 1 year ago
+        JMLM004:     Different house in United States 1 year ago: Same Metropolitan Statistical Area
+        JMLM005:     Different house in United States 1 year ago: Same Metropolitan Statistical Area: Moved from principal city
+        JMLM006:     Different house in United States 1 year ago: Same Metropolitan Statistical Area: Moved from remainder of Metropolitan Statistical Area
+        JMLM007:     Different house in United States 1 year ago: Different Metropolitan Statistical Area
+        JMLM008:     Different house in United States 1 year ago: Different Metropolitan Statistical Area: Moved from principal city
+        JMLM009:     Different house in United States 1 year ago: Different Metropolitan Statistical Area: Moved from remainder of Metropolitan Statistical Area
+        JMLM010:     Different house in United States 1 year ago: Micropolitan Statistical Area
+        JMLM011:     Different house in United States 1 year ago: Not in a Metropolitan or Micropolitan Statistical Area 1 year ago
+        JMLM012:     Abroad 1 year ago
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing NHGIS data (either tabular or GIS)
+  must cite it appropriately. The citation should include the following:
+
+    Minnesota Population Center. National Historical Geographic Information
+    System: Version 2.0. Minneapolis, MN: University of Minnesota 2011.
+
+* Publications and research reports employing school attendance areas data
+  (either tabular or GIS) must cite it appropriately. The citation should
+  include the following:
+
+    The College of William and Mary and the Minnesota Population Center.
+    School Attendance Boundary Information System (SABINS): Version 1.0.
+    Minneapolis, MN: University of Minnesota 2011.
+
+* If possible, citations should also include the URL for the NHGIS site:
+
+    https://www.nhgis.org/
+
+* If possible, citations involving school attendance areas should also include
+  the URL for the SABINS site:
+
+    http://www.sabinsdata.org/
+
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+Printed matter should be sent to:
+
+    NHGIS
+    Minnesota Population Center
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455
+
+Send electronic material to: nhgis@umn.edu
