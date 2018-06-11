@@ -1,0 +1,416 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0004_ds176_20105_2010_blck_grp'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2006-2010
+Geographic level: Block Group (by State--County--Census Tract)
+Dataset:          2010 American Community Survey: 5-Year Data [2006-2010, Block Groups & Larger Areas]
+   NHGIS code:    2010_ACS5a
+   NHGIS ID:      ds176
+Breakdown(s):     Geographic Subarea:
+                     Total area (00)
+Data type(s):     (E) Estimates
+                  (M) Margins of error
+ 
+Tables:
+ 
+1. Geographical Mobility in the Past Year for Current Residence--Metropolitan Statistical Area Level in the United States
+   Universe:    Population 1 year and over living in a Metropolitan Statistical Area in the United States
+   Source code: C07201
+   NHGIS code:  JML
+ 
+2. Means of Transportation to Work
+   Universe:    Workers 16 years and over
+   Source code: B08301
+   NHGIS code:  JM0
+ 
+3. Sex by Educational Attainment for the Population 25 Years and Over
+   Universe:    Population 25 years and over
+   Source code: B15002
+   NHGIS code:  JN9
+ 
+4. Self-Employment Income in the Past 12 Months for Households
+   Universe:    Households
+   Source code: B19053
+   NHGIS code:  JO7
+ 
+5. Rent Asked
+   Universe:    Vacant-for-rent and rented, not occupied housing units
+   Source code: B25061
+   NHGIS code:  JS2
+ 
+6. Aggregate Price Asked (Dollars)
+   Universe:    Vacant-for-sale-only and sold, not occupied housing units
+   Source code: B25086
+   NHGIS code:  JTQ
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        REGION:      Region Name
+        REGIONA:     Region Code
+        DIVISION:    Division Name
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTY:      County Name
+        COUNTYA:     County Code
+        COUSUB:      County Subdivision Name
+        COUSUBA:     County Subdivision Code
+        PLACE:       Place Name
+        PLACEA:      Place Code
+        TRACTA:      Census Tract Code
+        BLKGRPA:     Block Group Code
+        CONCITA:     Consolidated City Code
+        AIANHH:      American Indian Area/Alaska Native Area/Hawaiian Home Land Name
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        RES_ONLYA:   American Indian Area/Alaska Native Area (Reservation or Statistical Entity Only) Code
+        TRUSTA:      American Indian Reservation with Trust Lands; trust lands only Code
+        AITSCEA:     Tribal Subdivision/Remainder Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        CBSA:        Metropolitan Statistical Area/Micropolitan Statistical Area Name
+        CBSAA:       Metropolitan Statistical Area/Micropolitan Statistical Area Code
+        CSA:         Combined Statistical Area Name
+        CSAA:        Combined Statistical Area Code
+        METDIV:      Metropolitan Division Name
+        METDIVA:     Metropolitan Division Code
+        NECTA:       New England City and Town Area Name
+        NECTAA:      New England City and Town Area Code
+        CNECTA:      Combined New England City and Town Area Name
+        CNECTAA:     Combined New England City and Town Area Code
+        NECTADIV:    New England City and Town Area Division Name
+        NECTADIVA:   New England City and Town Area Division Code
+        UA:          Urban Area Name
+        UAA:         Urban Area Code
+        CDCURRA:     Congressional District (111th Congress) Code
+        SLDUA:       State Legislative District (Upper Chamber) Code
+        SLDLA:       State Legislative District (Lower Chamber) Code
+        SUBMCDA:     Subminor Civil Division Code
+        SDELM:       School District (Elementary)/Remainder Name
+        SDELMA:      School District (Elementary)/Remainder Code
+        SDSEC:       School District (Secondary)/Remainder Name
+        SDSECA:      School District (Secondary)/Remainder Code
+        SDUNI:       School District (Unified)/Remainder Name
+        SDUNIA:      School District (Unified)/Remainder Code
+        PUMA5A:      Public Use Microdata Sample Area (PUMA) Code
+        BTTRA:       Tribal Census Tract Code
+        BTBGA:       Tribal Block Group Code
+ 
+Breakdown/Data Type 1 (E):
+    Geographic Subarea: Total area (00)
+    Estimates
+ 
+        NAME_E:      Area Name
+ 
+    Table 1:     Geographical Mobility in the Past Year for Current Residence--Metropolitan Statistical Area Level in the United States
+    Universe:    Population 1 year and over living in a Metropolitan Statistical Area in the United States
+    Source code: C07201
+    NHGIS code:  JML
+        JMLE001:     Total
+        JMLE002:     Same house 1 year ago
+        JMLE003:     Different house in United States 1 year ago
+        JMLE004:     Different house in United States 1 year ago: Same Metropolitan Statistical Area
+        JMLE005:     Different house in United States 1 year ago: Same Metropolitan Statistical Area: Moved from principal city
+        JMLE006:     Different house in United States 1 year ago: Same Metropolitan Statistical Area: Moved from remainder of Metropolitan Statistical Area
+        JMLE007:     Different house in United States 1 year ago: Different Metropolitan Statistical Area
+        JMLE008:     Different house in United States 1 year ago: Different Metropolitan Statistical Area: Moved from principal city
+        JMLE009:     Different house in United States 1 year ago: Different Metropolitan Statistical Area: Moved from remainder of Metropolitan Statistical Area
+        JMLE010:     Different house in United States 1 year ago: Micropolitan Statistical Area
+        JMLE011:     Different house in United States 1 year ago: Not in a Metropolitan or Micropolitan Statistical Area 1 year ago
+        JMLE012:     Abroad 1 year ago
+ 
+    Table 2:     Means of Transportation to Work
+    Universe:    Workers 16 years and over
+    Source code: B08301
+    NHGIS code:  JM0
+        JM0E001:     Total
+        JM0E002:     Car, truck, or van
+        JM0E003:     Car, truck, or van: Drove alone
+        JM0E004:     Car, truck, or van: Carpooled
+        JM0E005:     Car, truck, or van: Carpooled: In 2-person carpool
+        JM0E006:     Car, truck, or van: Carpooled: In 3-person carpool
+        JM0E007:     Car, truck, or van: Carpooled: In 4-person carpool
+        JM0E008:     Car, truck, or van: Carpooled: In 5- or 6-person carpool
+        JM0E009:     Car, truck, or van: Carpooled: In 7-or-more-person carpool
+        JM0E010:     Public transportation (excluding taxicab)
+        JM0E011:     Public transportation (excluding taxicab): Bus or trolley bus
+        JM0E012:     Public transportation (excluding taxicab): Streetcar or trolley car (carro publico in Puerto Rico)
+        JM0E013:     Public transportation (excluding taxicab): Subway or elevated
+        JM0E014:     Public transportation (excluding taxicab): Railroad
+        JM0E015:     Public transportation (excluding taxicab): Ferryboat
+        JM0E016:     Taxicab
+        JM0E017:     Motorcycle
+        JM0E018:     Bicycle
+        JM0E019:     Walked
+        JM0E020:     Other means
+        JM0E021:     Worked at home
+ 
+    Table 3:     Sex by Educational Attainment for the Population 25 Years and Over
+    Universe:    Population 25 years and over
+    Source code: B15002
+    NHGIS code:  JN9
+        JN9E001:     Total
+        JN9E002:     Male
+        JN9E003:     Male: No schooling completed
+        JN9E004:     Male: Nursery to 4th grade
+        JN9E005:     Male: 5th and 6th grade
+        JN9E006:     Male: 7th and 8th grade
+        JN9E007:     Male: 9th grade
+        JN9E008:     Male: 10th grade
+        JN9E009:     Male: 11th grade
+        JN9E010:     Male: 12th grade, no diploma
+        JN9E011:     Male: High school graduate, GED, or alternative
+        JN9E012:     Male: Some college, less than 1 year
+        JN9E013:     Male: Some college, 1 or more years, no degree
+        JN9E014:     Male: Associate's degree
+        JN9E015:     Male: Bachelor's degree
+        JN9E016:     Male: Master's degree
+        JN9E017:     Male: Professional school degree
+        JN9E018:     Male: Doctorate degree
+        JN9E019:     Female
+        JN9E020:     Female: No schooling completed
+        JN9E021:     Female: Nursery to 4th grade
+        JN9E022:     Female: 5th and 6th grade
+        JN9E023:     Female: 7th and 8th grade
+        JN9E024:     Female: 9th grade
+        JN9E025:     Female: 10th grade
+        JN9E026:     Female: 11th grade
+        JN9E027:     Female: 12th grade, no diploma
+        JN9E028:     Female: High school graduate, GED, or alternative
+        JN9E029:     Female: Some college, less than 1 year
+        JN9E030:     Female: Some college, 1 or more years, no degree
+        JN9E031:     Female: Associate's degree
+        JN9E032:     Female: Bachelor's degree
+        JN9E033:     Female: Master's degree
+        JN9E034:     Female: Professional school degree
+        JN9E035:     Female: Doctorate degree
+ 
+    Table 4:     Self-Employment Income in the Past 12 Months for Households
+    Universe:    Households
+    Source code: B19053
+    NHGIS code:  JO7
+        JO7E001:     Total
+        JO7E002:     With self-employment income
+        JO7E003:     No self-employment income
+ 
+    Table 5:     Rent Asked
+    Universe:    Vacant-for-rent and rented, not occupied housing units
+    Source code: B25061
+    NHGIS code:  JS2
+        JS2E001:     Total
+        JS2E002:     Less than $100
+        JS2E003:     $100 to $149
+        JS2E004:     $150 to $199
+        JS2E005:     $200 to $249
+        JS2E006:     $250 to $299
+        JS2E007:     $300 to $349
+        JS2E008:     $350 to $399
+        JS2E009:     $400 to $449
+        JS2E010:     $450 to $499
+        JS2E011:     $500 to $549
+        JS2E012:     $550 to $599
+        JS2E013:     $600 to $649
+        JS2E014:     $650 to $699
+        JS2E015:     $700 to $749
+        JS2E016:     $750 to $799
+        JS2E017:     $800 to $899
+        JS2E018:     $900 to $999
+        JS2E019:     $1,000 to $1,249
+        JS2E020:     $1,250 to $1,499
+        JS2E021:     $1,500 to $1,999
+        JS2E022:     $2,000 or more
+ 
+    Table 6:     Aggregate Price Asked (Dollars)
+    Universe:    Vacant-for-sale-only and sold, not occupied housing units
+    Source code: B25086
+    NHGIS code:  JTQ
+        JTQE001:     Aggregate price asked (dollars)
+ 
+Breakdown/Data Type 2 (M):
+    Geographic Subarea: Total area (00)
+    Margins of error
+ 
+        NAME_M:      Area Name
+ 
+    Table 1:     Geographical Mobility in the Past Year for Current Residence--Metropolitan Statistical Area Level in the United States
+    Universe:    Population 1 year and over living in a Metropolitan Statistical Area in the United States
+    Source code: C07201
+    NHGIS code:  JML
+        JMLM001:     Total
+        JMLM002:     Same house 1 year ago
+        JMLM003:     Different house in United States 1 year ago
+        JMLM004:     Different house in United States 1 year ago: Same Metropolitan Statistical Area
+        JMLM005:     Different house in United States 1 year ago: Same Metropolitan Statistical Area: Moved from principal city
+        JMLM006:     Different house in United States 1 year ago: Same Metropolitan Statistical Area: Moved from remainder of Metropolitan Statistical Area
+        JMLM007:     Different house in United States 1 year ago: Different Metropolitan Statistical Area
+        JMLM008:     Different house in United States 1 year ago: Different Metropolitan Statistical Area: Moved from principal city
+        JMLM009:     Different house in United States 1 year ago: Different Metropolitan Statistical Area: Moved from remainder of Metropolitan Statistical Area
+        JMLM010:     Different house in United States 1 year ago: Micropolitan Statistical Area
+        JMLM011:     Different house in United States 1 year ago: Not in a Metropolitan or Micropolitan Statistical Area 1 year ago
+        JMLM012:     Abroad 1 year ago
+ 
+    Table 2:     Means of Transportation to Work
+    Universe:    Workers 16 years and over
+    Source code: B08301
+    NHGIS code:  JM0
+        JM0M001:     Total
+        JM0M002:     Car, truck, or van
+        JM0M003:     Car, truck, or van: Drove alone
+        JM0M004:     Car, truck, or van: Carpooled
+        JM0M005:     Car, truck, or van: Carpooled: In 2-person carpool
+        JM0M006:     Car, truck, or van: Carpooled: In 3-person carpool
+        JM0M007:     Car, truck, or van: Carpooled: In 4-person carpool
+        JM0M008:     Car, truck, or van: Carpooled: In 5- or 6-person carpool
+        JM0M009:     Car, truck, or van: Carpooled: In 7-or-more-person carpool
+        JM0M010:     Public transportation (excluding taxicab)
+        JM0M011:     Public transportation (excluding taxicab): Bus or trolley bus
+        JM0M012:     Public transportation (excluding taxicab): Streetcar or trolley car (carro publico in Puerto Rico)
+        JM0M013:     Public transportation (excluding taxicab): Subway or elevated
+        JM0M014:     Public transportation (excluding taxicab): Railroad
+        JM0M015:     Public transportation (excluding taxicab): Ferryboat
+        JM0M016:     Taxicab
+        JM0M017:     Motorcycle
+        JM0M018:     Bicycle
+        JM0M019:     Walked
+        JM0M020:     Other means
+        JM0M021:     Worked at home
+ 
+    Table 3:     Sex by Educational Attainment for the Population 25 Years and Over
+    Universe:    Population 25 years and over
+    Source code: B15002
+    NHGIS code:  JN9
+        JN9M001:     Total
+        JN9M002:     Male
+        JN9M003:     Male: No schooling completed
+        JN9M004:     Male: Nursery to 4th grade
+        JN9M005:     Male: 5th and 6th grade
+        JN9M006:     Male: 7th and 8th grade
+        JN9M007:     Male: 9th grade
+        JN9M008:     Male: 10th grade
+        JN9M009:     Male: 11th grade
+        JN9M010:     Male: 12th grade, no diploma
+        JN9M011:     Male: High school graduate, GED, or alternative
+        JN9M012:     Male: Some college, less than 1 year
+        JN9M013:     Male: Some college, 1 or more years, no degree
+        JN9M014:     Male: Associate's degree
+        JN9M015:     Male: Bachelor's degree
+        JN9M016:     Male: Master's degree
+        JN9M017:     Male: Professional school degree
+        JN9M018:     Male: Doctorate degree
+        JN9M019:     Female
+        JN9M020:     Female: No schooling completed
+        JN9M021:     Female: Nursery to 4th grade
+        JN9M022:     Female: 5th and 6th grade
+        JN9M023:     Female: 7th and 8th grade
+        JN9M024:     Female: 9th grade
+        JN9M025:     Female: 10th grade
+        JN9M026:     Female: 11th grade
+        JN9M027:     Female: 12th grade, no diploma
+        JN9M028:     Female: High school graduate, GED, or alternative
+        JN9M029:     Female: Some college, less than 1 year
+        JN9M030:     Female: Some college, 1 or more years, no degree
+        JN9M031:     Female: Associate's degree
+        JN9M032:     Female: Bachelor's degree
+        JN9M033:     Female: Master's degree
+        JN9M034:     Female: Professional school degree
+        JN9M035:     Female: Doctorate degree
+ 
+    Table 4:     Self-Employment Income in the Past 12 Months for Households
+    Universe:    Households
+    Source code: B19053
+    NHGIS code:  JO7
+        JO7M001:     Total
+        JO7M002:     With self-employment income
+        JO7M003:     No self-employment income
+ 
+    Table 5:     Rent Asked
+    Universe:    Vacant-for-rent and rented, not occupied housing units
+    Source code: B25061
+    NHGIS code:  JS2
+        JS2M001:     Total
+        JS2M002:     Less than $100
+        JS2M003:     $100 to $149
+        JS2M004:     $150 to $199
+        JS2M005:     $200 to $249
+        JS2M006:     $250 to $299
+        JS2M007:     $300 to $349
+        JS2M008:     $350 to $399
+        JS2M009:     $400 to $449
+        JS2M010:     $450 to $499
+        JS2M011:     $500 to $549
+        JS2M012:     $550 to $599
+        JS2M013:     $600 to $649
+        JS2M014:     $650 to $699
+        JS2M015:     $700 to $749
+        JS2M016:     $750 to $799
+        JS2M017:     $800 to $899
+        JS2M018:     $900 to $999
+        JS2M019:     $1,000 to $1,249
+        JS2M020:     $1,250 to $1,499
+        JS2M021:     $1,500 to $1,999
+        JS2M022:     $2,000 or more
+ 
+    Table 6:     Aggregate Price Asked (Dollars)
+    Universe:    Vacant-for-sale-only and sold, not occupied housing units
+    Source code: B25086
+    NHGIS code:  JTQ
+        JTQM001:     Aggregate price asked (dollars)
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing NHGIS data (either tabular or GIS)
+  must cite it appropriately. The citation should include the following:
+
+    Minnesota Population Center. National Historical Geographic Information
+    System: Version 2.0. Minneapolis, MN: University of Minnesota 2011.
+
+* Publications and research reports employing school attendance areas data
+  (either tabular or GIS) must cite it appropriately. The citation should
+  include the following:
+
+    The College of William and Mary and the Minnesota Population Center.
+    School Attendance Boundary Information System (SABINS): Version 1.0.
+    Minneapolis, MN: University of Minnesota 2011.
+
+* If possible, citations should also include the URL for the NHGIS site:
+
+    https://www.nhgis.org/
+
+* If possible, citations involving school attendance areas should also include
+  the URL for the SABINS site:
+
+    http://www.sabinsdata.org/
+
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+Printed matter should be sent to:
+
+    NHGIS
+    Minnesota Population Center
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455
+
+Send electronic material to: nhgis@umn.edu

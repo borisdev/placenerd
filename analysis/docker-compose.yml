@@ -2,11 +2,13 @@ version: '2'
 services:
     placenerd:
         build: .
-        command: tail -f analysis.log
         working_dir: /opt/placenerd/analysis
         environment:
             - NLTK_DATA=/opt/placenerd/analysis/nltk_data
             - DOWNLOAD_DATASET=book
             - PYTHONPATH=$PYTHONPATH:/opt/placenerd/analysis
         volumes:
-            - ./:/opt/placenerd/analysis
+            - .:/opt/notebooks        
+        ports:
+            - "8888:8888"
+        command: /bin/bash -c "/opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser --allow-root"
